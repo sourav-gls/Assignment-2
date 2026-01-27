@@ -67,9 +67,12 @@
 .text-white{
     color: white;
 }
+#menu{
+    display: none;
+}
 
 .hero-bg{
-    background-image: url(assets/hero-bg.png) ;
+    background-image: url(assets/hero-bg.png);
     border-top: 1px solid rgb(52, 46, 46) ;
     background-size: cover;
     display: flex;
@@ -123,13 +126,7 @@
     gap: 8px;
     margin-top: 24px;
 }
-.hero-bg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
 
-}
 .hero-content{ 
     display: flex;
     flex-direction: column;
@@ -223,7 +220,7 @@ text-transform: uppercase;
     grid-template-rows: repeat(3 , 273px) ;
     justify-content: center;
     align-items: center;
-     width: 1200px;
+    width: 1200px;
     height: 783px;
     margin-bottom: 120px;
     
@@ -419,4 +416,116 @@ footer h1{
 
     
     
+}
+@media screen and (max-width:576px) {
+   .menu-bar , .nav-btn ,.host-section{
+    display:none;
+   }
+   .navbar{ 
+    max-width: 500px;
+    gap: 0px;
+    
+   }
+   .navbar h2{
+    font-size: 22px;
+    margin: 0;
+       
+   }
+   #menu{
+    display:block;
+    cursor: pointer;
+   }
+   .logo{
+    display: flex;
+    gap: 170px;
+   }
+   .img1{
+    width: 200px;
+    height: 200px;
+   }
+   .img2{
+    width: 70px;
+    height: 90px;
+    transform: translate(-100%,-60%);
+   }
+   .new{
+    transform: translate(-95%,-500%);
+    font-size: 16px;
+   }
+   
+   .img-box{
+    margin-bottom: 24px;
+
+   }
+
+   .hero-bg{
+   background-image: url(assets/hero-bg.png);
+   max-width: 500px;
+   background-size: cover;
+   background-repeat: no-repeat;
+    
+   }
+    .hero-content h1{
+     font-size: 25px;
+     margin-bottom: 8px;
+     
+    }
+    .hero-content {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .about-section{
+        max-width: 500px;
+        padding-top: 60px;
+    }
+    .about-content h1{
+        font-size: 30px;
+    }
+    .about-content{
+        margin-left:10px ;
+        margin-right:10px ;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(2 ,1fr);
+        gap: 30px;
+    }
+    .about-card{
+        text-align: center;
+    }
+    .about-card h1{
+        font-size: 35px;
+    }
+    .why-section{
+        width: 100%;
+        max-width: 500px;
+        padding-bottom: 30px;
+    }
+    .why-section h1{
+        font-size: 30px;
+    }
+    .card-1{
+    
+    }
+.youtube-card{
+     flex-direction :column;
+   }
+.card-1-box {
+    grid-template-columns: repeat(1 ,1fr);
+    grid-template-rows: repeat(1 ,1fr);
+    max-width: 370px;
+    height: auto;
+   
+}
+.card-1{
+    padding-bottom: 10px;
+
+  
+}
 }
