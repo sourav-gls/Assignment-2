@@ -381,7 +381,15 @@ margin-right: 40px;
 }
 .social-link a{
     margin-right: -35px;
+    background-color: 1px solid red;
 
+}
+.social-link img{
+    border: 1px solid rgb(163, 133, 133);
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
 }
 footer{
     background-image: url(assets/footer-bg.png);
@@ -404,7 +412,7 @@ footer h1{
     color: rgb(237, 49, 153);
 }
 .link-social{
-    display: flex;
+    display:flex;
     gap: 40px;
     margin-bottom: 32px;
 }
@@ -418,11 +426,11 @@ footer h1{
     
 }
 @media screen and (max-width:576px) {
-   .menu-bar , .nav-btn ,.host-section{
+   .menu-bar , .nav-btn {
     display:none;
    }
    .navbar{ 
-    max-width: 500px;
+    max-width: 440px;
     gap: 0px;
     
    }
@@ -431,7 +439,7 @@ footer h1{
     margin: 0;
        
    }
-   #menu{
+   #menu {
     display:block;
     cursor: pointer;
    }
@@ -460,7 +468,7 @@ footer h1{
 
    .hero-bg{
    background-image: url(assets/hero-bg.png);
-   max-width: 500px;
+   max-width: 440px;
    background-size: cover;
    background-repeat: no-repeat;
     
@@ -471,7 +479,7 @@ footer h1{
      
     }
     .hero-content {
-        max-width: 500px;
+        max-width: 440px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -480,7 +488,7 @@ footer h1{
         margin-right: 10px;
     }
     .about-section{
-        max-width: 500px;
+        max-width: 440px;
         padding-top: 60px;
     }
     .about-content h1{
@@ -504,7 +512,7 @@ footer h1{
     }
     .why-section{
         width: 100%;
-        max-width: 500px;
+        max-width: 440px;
         padding-bottom: 30px;
     }
     .why-section h1{
@@ -513,7 +521,7 @@ footer h1{
     .card-1{
     
     }
-.youtube-card{
+.youtube-card , .host-section{
      flex-direction :column;
    }
 .card-1-box {
@@ -524,8 +532,75 @@ footer h1{
    
 }
 .card-1{
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
+}
+.featured-section{
+    max-width: 440px;
+}
+.featured-section h1{
+    font-size: 30px;
+}
+.youtube-card .video {
+    width: 350px;
+}
+.card-2{
+   width: 350px; 
+}
+.youtube-card{
+    align-items: center;
 
-  
+}
+.host-section{
+    margin-top: 0;
+}
+.host-container h1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.host-section{
+    width: 350px;
+    height: auto;
+}
+.host-content{
+    justify-items: center;
+    align-items: center;
+}
+.host-section p{
+    margin-right: 0px;
+    margin: 20px;
+}
+.name{
+    margin-top: 30px;
+}
+.social-link{
+    margin-bottom: 30px;
+}
+footer{
+    max-width: 440px;
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 0px;
+    
+}
+.footer{
+    padding-top: 60px;
+}
+footer h1{
+    font-size: 35px;
+    
+}
+.link-social{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+.link-social p{
+    margin-right:0px;
+
 }
 }
